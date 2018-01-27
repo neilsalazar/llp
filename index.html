@@ -1,75 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<!--=============================
-			BROWSER TITLING 
-		==============================-->
-			<link rel="icon" style="text/image" href="">
-		<title>
-			Letlove Photography - Capturing moments that make your heart hum a love song.
-		</title>
-		<!--=============================
-			Control Broswer's Scaling
-		===============================-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<!--=============================
-			CSS Links
-		==============================-->
-		<!--=====NORMALIZE=====-->
-		<link rel="stylesheet" href="css/normalize.css"/>
-		<!--=====User Created====-->
-		<link rel="stylesheet" href="css/main.css"/>
-	</head>
-<body>
-	<header>
-	<div id="logo">
-		<a href="#home"><h1>Letlove<br>
-			Photography</h1></a>
-	</div>
-	<nav>
-		<ul>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#proofs">Proofs</a></li>
-			<li><a href="#blog">Blog</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</header>
-	<div id="main_container">
-			<div id="main_photo">
-				<img class="mainImg" width="600px" height="400px" src="images/wedd23.jpg"/>
-			</div>
-		
-	<!--===Radio Buttons for image slideshow===-->
-			<div id="radcontainer">
-				<div class="radio">  
-			    <input type="radio" id="radiator1" name="radio" checked />  
-			      <label for="radiator1"></label>  
-			    </div>  
-			      
-			    <div class="radio">  
-			      <input type="radio" id="radiator2" name="radio" />  
-			      <label for="radiator2"></label>  
-			    </div>  
-			    <div class="radio">  
-			      <input type="radio" id="radiator3" name="radio" />  
-			      <label for="radiator3"></label>  
-			    </div>
-			</div>
-			<aside>
-				
-					<div class="social_links"><a href="#instagramsite"><img data-alt-src="/images/instagram_logo_tblue.png" src="/images/instagram_logo.png" alt="Logo link to Instagram"/></div>
-					<div class="social_links"><a href="#facebooksite"><img data-alt-src="/images/facebook_logo_tblue.png" src="/images/facebook_logo.png" alt="Logo link to Facebook"/></div>
-					<div class="social_links"><a href="#twittersite"><img data-alt-src="/images/twitter_logo_tblue.png" src="/images/twitter_logo.png" alt="Logo link to Twitter"/></div>
-					<div class="social_links"><a href="#wordpresssite"><img data-alt-src="/images/wordpress_logo_tblue.png" src="/images/wordpress_logo.png" alt="Logo link to WordPress Blog"/></div>
-					<div class="social_links"><a href="#yelpsite"><img data-alt-src="/images/yelp_logo_tblue.png" src="/images/yelp_logo.png" alt="Logo link to Yelp"/></div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LetLove Photography</title>
 
-			</aside>
-	</div>	
-<!--==========SCRIPTS=========-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="jquery/main.js"></script>	
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <div class="pageWrapper">
+      <header>
+        <div class="logoWrapper">
+          <img src="images/llpLogo.png" alt="let love photography logo">
+          <img class="mobHam" src="images/hamMenu.png" alt="mobMenu">
+        </div>
+        <div class="titleWrapper">
+          <h1>Letlove <br class="deskBreak"> Photography</h1>
+        </div>
+      </header>
 
-</body>
+      <nav>
+        <ul class="mobNav">
+          <li><a href="#about">about</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#pricing">pricing</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="home" class="landingPage">
+        <img src="images/betaLP.jpg" alt="landing page couple sutro baths">
+      </section>
+
+
+      <section id="about" class="aboutSect">
+        <div class="leftCol">
+          <h2>meet lileth</h2>
+          <img src="images/letSelf.jpg" alt="lileth self-portrait">
+          <ul class="deskNav sanSerifFont">
+            <li><a href="#about">about |</a></li>
+            <li><a href="#gallery"> gallery |</a></li>
+            <li><a href="#pricing"> pricing |</a></li>
+            <li><a href="#contact"> contact</a></li>
+          </ul>
+        </div>
+        <div class="mainCol">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus sem ipsum, vehicula accumsan quam volutpat quis. Quisque sed aliquam erat. Nullam feugiat ac orci id hendrerit. Donec mattis malesuada mi, vel tincidunt diam consequat tempor. Maecenas in sem laoreet, commodo orci quis, placerat leo. Vestibulum facilisis lacus et nunc semper iaculis. Vestibulum sed nisl at elit venenatis aliquet.</p>
+
+          <p>Pellentesque imperdiet volutpat ex, non finibus turpis malesuada id. Pellentesque ullamcorper dapibus ante sit amet varius. Praesent eu neque mattis, laoreet felis a, tristique tellus. Mauris nec eros neque. Vivamus imperdiet arcu eu facilisis sagittis. Sed dictum magna vel volutpat ultrices. In accumsan mauris vel gravida tincidunt.</p>
+
+          <p>Nullam at euismod purus, non blandit sem. Donec posuere purus vel nisi vulputate, quis convallis magna accumsan. Quisque mauris neque, lobortis id felis vitae, malesuada semper ipsum. Nunc pellentesque auctor quam eu tincidunt. </p>
+        </div>
+      </section>
+      <section id="gallery" class="gallerySect">
+
+      <!-- desk gallery nav -->
+        <div class="deskGalleryNav">
+          <ul class="galNav">
+            <li><a class="galLink weddingLink" href="#wedding">weddings</a></li>
+            <li><a class="galLink engagementLink" href="#engagement">engagements</a></li>
+            <li><a class="galLink portraitLink" href="#portrait">portraits</a></li>
+          </ul>
+          <ul class="deskNav sanSerifFont">
+            <li><a href="#about">about |</a></li>
+            <li><a href="#gallery"> gallery |</a></li>
+            <li><a href="#pricing"> pricing |</a></li>
+            <li><a href="#contact"> contact</a></li>
+          </ul>
+        </div>
+
+      <!-- wedding gallery -->
+        <div class="leftCol weddingCol">
+          <ul class="galNav">
+            <li><a class="selectedGal" href="#wedding">weddings</a></li>
+            <li><a href="#engagement">engagements</a></li>
+            <li><a href="#portrait">portraits</a></li>
+          </ul>
+          <ul class="deskNav sanSerifFont">
+            <li><a href="#about">about |</a></li>
+            <li><a href="#gallery"> gallery |</a></li>
+            <li><a href="#pricing"> pricing |</a></li>
+            <li><a href="#contact"> contact</a></li>
+          </ul>
+        </div>
+        <div id="wedding" class="mainCol">
+          <img src="images/wedding1.jpg" alt="wedding 1">
+          <img src="images/wedding2.jpg" alt="wedding 2">
+          <img src="images/wedding3.jpg" alt="wedding 3">
+        </div>
+
+      <!-- engagement gallery -->
+        <div class="leftCol engagementCol">
+          <ul class="galNav">
+            <li><a href="#wedding">weddings</a></li>
+            <li><a class="selectedGal" href="#engagement">engagements</a></li>
+            <li><a href="#portrait">portraits</a></li>
+          </ul>
+          <ul class="deskNav sanSerifFont">
+            <li><a href="#about">about |</a></li>
+            <li><a href="#gallery"> gallery |</a></li>
+            <li><a href="#pricing"> pricing |</a></li>
+            <li><a href="#contact"> contact</a></li>
+          </ul>
+        </div>
+        <div id="engagement" class="mainCol">
+          <img src="images/engagement1.jpg" alt="engagement 1">
+          <img src="images/engagement2.jpg" alt="engagement 2">
+          <img src="images/engagement3.jpg" alt="engagement 3">
+        </div>
+
+      <!-- portrait gallery -->
+        <div class="leftCol portraitCol">
+          <ul class="galNav">
+            <li><a href="#wedding">weddings</a></li>
+            <li><a href="#engagement">engagements</a></li>
+            <li><a class="selectedGal" href="#portrait">portraits</a></li>
+          </ul>
+          <ul class="deskNav sanSerifFont">
+            <li><a href="#about">about |</a></li>
+            <li><a href="#gallery"> gallery |</a></li>
+            <li><a href="#pricing"> pricing |</a></li>
+            <li><a href="#contact"> contact</a></li>
+          </ul>
+        </div>
+        <div id="portrait" class="mainCol">
+          <img src="images/portrait1.jpg" alt="portrait 1">
+          <img src="images/portrait2.jpg" alt="portrait 2">
+          <img src="images/portrait3.jpg" alt="portrait 3">
+        </div>
+      </section>
+
+
+      <section id="pricing" class="pricingSect">
+        <div class="leftCol">
+          <h2>Collections</h2>
+          <p>$$$$$$$</p>
+          <p>$$$$$$$</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Convallis tellus id interdum velit laoreet id donec. Fermentum dui faucibus in ornare. Rhoncus mattis rhoncus urna neque viverra justo.</p>
+
+          <p>Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Laoreet non curabitur gravida arcu ac tortor. Id leo in vitae turpis massa sed.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Convallis tellus id interdum velit laoreet id donec. Fermentum dui faucibus in ornare. Rhoncus mattis rhoncus urna neque viverra justo.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Convallis tellus id interdum velit laoreet id donec. Fermentum dui faucibus in ornare. Rhoncus mattis rhoncus urna neque viverra justo.</p>
+
+        </div>
+        <div class="mainCol">
+        </div>
+        <div class="invisiDiv">
+          hidden text with no meaning
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+      </section>
+    </div>
+    <footer>
+      <div class="fullContact">
+        <h2>Contact Me</h2>
+
+      </div>
+    </footer>
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="llp.js"></script>
 </html>
